@@ -1,5 +1,5 @@
 
-# This is a playground repo for exploring Django
+# This is a playground repo for exploring Django with bootstrap 5
 
 ## steps for polling site
 
