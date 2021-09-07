@@ -54,4 +54,25 @@
     3. login with admin user + pw
     
 
+EXTRA
+----
+
+add in polls/admin.py:
+
+    1. A new class \<ClassName>Inline(admin.TabluarInline):
+        1. Set the model to \<className>
+        2. Set the number of wanted fields to \<numberOfFields>
+    2. Another class \<ClassName>Admin(admin.ModelAdmin):
+        1. Add the fieldsets to control the layout of the 'add' and 'change pages':
+        (Tuple (name,field_option))
+            1. (None, {'fields',['\<Model.attribute>']}) 
+                1.(none will take the default) 
+                2. (fields points to each entry and it will take the default => ['\<Model.attribute>'])
+            2. ('Date information', {'fields',['pub_date'],'classes',['collapse']}), 
+                1. (Date information will be the name of the fieldset,)
+                2. pub_date as collmn name (Date Published)
+                3. Classes with option collapse (collapse will collapse the fieldset)
+        2. list_display: the order of  the fields to be displayed
+        3. list_filter: the fields to be used for filtering
+        4. search_fields: the fields to be used for searching
 
