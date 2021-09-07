@@ -75,4 +75,10 @@ add in polls/admin.py:
         2. list_display: the order of  the fields to be displayed
         3. list_filter: the fields to be used for filtering
         4. search_fields: the fields to be used for searching
-
+    3. Change the site header 
+        1. (admin.site.site_header = '\<header>')
+    4. Change the site title
+        1. (admin.site.site_title = '\<title>')
+    5. Change the index page title
+        1. (admin.site.index_title = '\<title>')
+    

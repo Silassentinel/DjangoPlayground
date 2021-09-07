@@ -3,7 +3,17 @@ from django.contrib import admin
 # import the created models
 from .models import Question, Choice
 
+# Change the header of the admin panel
+admin.site.site_header = 'Polls Administration'
+
+# Change the page title
+admin.site.site_title = 'Polls Administration area'
+
+# Change the page index title
+admin.site.index_title = 'Welcome to the poll admin area'
+
 #register the models to the site
+# #do not use this make a tablu and nest according to the model
 # admin.site.register(Question)
 # admin.site.register(Choice)
 
